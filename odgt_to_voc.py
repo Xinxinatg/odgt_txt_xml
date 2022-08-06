@@ -6,7 +6,7 @@ import os, glob
  
 target_class = ["head"] #["head", "fbody", "vbody", #"mask"]   #[] --> all
 annotations_path = "./annotation_train.odgt"
-crowdHuman_path = "./crowd_human/all"
+crowdHuman_path = "./Images"
 
 
 xml_file = "xml_file.txt"
