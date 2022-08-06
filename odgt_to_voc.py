@@ -4,7 +4,7 @@ import imutils
 import time
 import os, glob
  
-target_class = [] #["head", "fbody", "vbody", #"mask"]   #[] --> all
+target_class = ["head"] #["head", "fbody", "vbody", #"mask"]   #[] --> all
 annotations_path = "./annotation_train.odgt"
 crowdHuman_path = "./crowd_human/all"
 
@@ -16,7 +16,7 @@ object_xml_file = "xml_object.txt"
 datasetPath = 'crowd_dataset/'
 imgPath = "image/"
 labelPath = "label/"
-imgType = ".png"  # .jpg, .png (with "." dot)
+imgType = ".jpg"  # .jpg, .png (with "." dot)
 
 def check_env():
     if not os.path.exists(os.path.join(datasetPath, imgPath)):
